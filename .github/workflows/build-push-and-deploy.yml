@@ -35,7 +35,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            wabph/${{ github.event.repository.name }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}
           flavor: |
             latest=false
           tags: |
